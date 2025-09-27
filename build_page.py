@@ -1,17 +1,17 @@
 def main():
     # 个⼈信息配置
     personal_info = {
-        "name": "张三",
-        "title": "AI Engineer",
-        "description": "AI Engineer passionate about MLOps and automation.",
-        "skills": ["Python", "TensorFlow", "Git", "CI/CD", "Docker"],
+        "name": "Emma Du",
+        "title": "Cloud Developer",
+        "description": "I'm a Cloud Developer passionate about building and deploying scalable cloud-native applications and infrastructure. ☁️ My focus is on creating robust, high-performance solutions on the Google Cloud Platform (GCP).",
+        "skills": ["Go", "GCP", "Linux", "Kubernetes", "DevOps"],
         "projects": [
-            {"name": "项⽬⼀", "url":"https://github.com/yourusername/project1"},
-            {"name": "项⽬⼆", "url": "https://github.com/yourusername/project2"}
+            {"name": "项⽬⼀", "url":"https://github.com/CloudAceEmma/xu-assignments"},
+            {"name": "项⽬⼆", "url": "https://github.com/CloudAceEmma/my-dev-card"}
         ],
         "contact": {
-            "github": "https://github.com/yourusername",
-            "linkedin": "https://linkedin.com/in/yourprofile"
+            "github": "https://github.com/CloudAceEmma/CloudAceEmma",
+            "linkedin": "https://www.linkedin.com/in/emma-du-b94861222"
         }
     }
     # HTML模板
