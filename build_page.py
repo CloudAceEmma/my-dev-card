@@ -6,13 +6,16 @@ def main():
         "description": "I'm a Cloud Developer passionate about building and deploying scalable cloud-native applications and infrastructure. ☁️ My focus is on creating robust, high-performance solutions on the Google Cloud Platform (GCP).",
         "skills": ["Go", "GCP", "Linux", "Kubernetes", "DevOps"],
         "projects": [
-            {"name": "项⽬⼀", "url":"https://github.com/CloudAceEmma/xu-assignments"},
-            {"name": "项⽬⼆", "url": "https://github.com/CloudAceEmma/my-dev-card"}
+            {
+                "name": "Project 1",
+                "url": "https://github.com/CloudAceEmma/xu-assignments",
+            },
+            {"name": "Project 2", "url": "https://github.com/CloudAceEmma/my-dev-card"},
         ],
         "contact": {
             "github": "https://github.com/CloudAceEmma/CloudAceEmma",
-            "linkedin": "https://www.linkedin.com/in/emma-du-b94861222"
-        }
+            "linkedin": "https://www.linkedin.com/in/emma-du-b94861222",
+        },
     }
     # HTML模板
     html_content = f"""
@@ -77,20 +80,20 @@ def main():
             <h1>{personal_info['name']}</h1>
             <div class="title">{personal_info['title']}</div>
             <p>{personal_info['description']}</p>
-            <h2>技能</h2>
+            <h2>Skills</h2>
             <div class="skills">
     """
     # 添加技能标签
-    for skill in personal_info['skills']:
+    for skill in personal_info["skills"]:
         html_content += f'<span class="skill">{skill}</span>\n'
     html_content += """
         </div>
-        <h2>项⽬经历</h2>
+        <h2>Experiences</h2>
         <div class="projects">
             <ul>
     """
     # 添加项⽬链接
-    for project in personal_info['projects']:
+    for project in personal_info["projects"]:
         html_content += f'<li><a href="{project["url"]}"target="_blank">{project["name"]}</a></li>\n'
     html_content += f"""
         </ul>
@@ -110,5 +113,7 @@ def main():
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html_content)
     print("index.html generated successfully!")
+
+
 if __name__ == "__main__":
     main()
